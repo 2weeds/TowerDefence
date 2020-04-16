@@ -13,20 +13,29 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed*Time.deltaTime, Space.World);
-        if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+        if (target!=null)
         {
-            GetNextWayPoint();
+            Vector3 dir = target.position - transform.position;
+            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+            if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+            {
+                GetNextWayPoint();
+            }
         }
+       
     }
     void GetNextWayPoint()
     {
         if (wavepointIndex >= Waypoint.points.Length - 1)
         {
             Destroy(gameObject);
+            wavepointIndex = -1;
         }
-        wavepointIndex++;
-        target = Waypoint.points[wavepointIndex];
+        else
+        {
+            wavepointIndex++;
+            target = Waypoint.points[wavepointIndex];
+        }
+        
     }
 }
