@@ -20,7 +20,6 @@ public class Bullet : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
 		if (target == null)
 		{
 			Destroy(gameObject);
@@ -71,15 +70,15 @@ public class Bullet : MonoBehaviour
 		}
 	}
 
-	//void Damage(Transform enemy)
-	//{
-	//	Enemy e = enemy.GetComponent<Enemy>();
+	void Damage(Transform enemy)
+	{
+		Enemy e = enemy.GetComponent<Enemy>();
 
-	//	if (e != null)
-	//	{
-	//		e.TakeDamage(damage);
-	//	}
-	//}
+		if (e != null)
+		{
+			e.TakeDamage(damage);
+		}
+	}
 
 	void OnDrawGizmosSelected()
 	{
