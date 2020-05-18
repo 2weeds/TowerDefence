@@ -15,7 +15,7 @@ public class Node : MonoBehaviour
 
     BuildManager buildManager;
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
@@ -26,7 +26,7 @@ public class Node : MonoBehaviour
     {
         return transform.position + positionOffset;
     }
-    void OnMouseDown()
+    void OnMouseDown ()
     {
         if (EventSystem.current.IsPointerOverGameObject())
             return;
@@ -40,13 +40,16 @@ public class Node : MonoBehaviour
         buildManager.BuildTurretOn(this);
     }
 
-    void OnMouseEnter()
+    void OnMouseEnter ()
     {
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
         if (!buildManager.CanBuild)
+        {
+            Debug.Log("aaa shit");
             return;
+        }
         if (buildManager.HasMoney)
         {
             rend.material.color = hoverColor;
@@ -57,7 +60,7 @@ public class Node : MonoBehaviour
         }
     }
 
-    void OnMouseExit()
+    void OnMouseExit ()
     {
         rend.material.color = hoverColor;
     }
