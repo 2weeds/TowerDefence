@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             wavepointIndex = -1;
-            return;
         }
         else
         {
