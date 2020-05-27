@@ -3,8 +3,13 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
-{   
+{
+
+
     public Transform enemyPrefab;
+    public Transform enemyPrefab1;
+    public Transform enemyPrefab2;
+
 
     public Transform spawnPoint;
 
@@ -24,22 +29,27 @@ public class WaveSpawner : MonoBehaviour
     }
     IEnumerator SpawnWave ()
     {
-       
+
 
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(2f);
         }
         waveIndex++;
+
+
     }
     void SpawnEnemy ()
     {
-        if (enemyPrefab != null)
-        {
-            Instantiate(enemyPrefab, spawnPoint.position, enemyPrefab.rotation);
-        }
-        
+
+        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemyPrefab1, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemyPrefab2, spawnPoint.position, spawnPoint.rotation);
+
+
+
+
     }
 
 }
