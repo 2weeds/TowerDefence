@@ -21,8 +21,7 @@ public class Turret : MonoBehaviour
 	//[Header("Use Laser")]
 	//public bool useLaser = false;
 
-	public int damageOverTime = 30;
-	public float slowAmount = .5f;
+	public float slowAmount = 0.5f;
 
 	//public LineRenderer lineRenderer;
 	//public ParticleSystem impactEffect;
@@ -148,10 +147,9 @@ public class Turret : MonoBehaviour
 
 	//	impactEffect.transform.rotation = Quaternion.LookRotation(dir);
 	//}
-
 	void Shoot()
 	{
-		
+
 
 		GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet>();

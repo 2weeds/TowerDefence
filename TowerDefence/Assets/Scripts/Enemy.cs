@@ -1,14 +1,23 @@
 ﻿using System.Collections;
+using UnityEngine.UI;
 
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startSpeed = 10f;
+    [HideInInspector]
     private Transform target;
     private int wavepointIndex = 0;
+    
+    public float startHealth = 100;
+    private float health;
+    public int worth = 50;
+    [Header("Unity Stuff")]
+    public Image healthBar;
     void Start()
     {
+        health = startHealth;
         target = Waypoint.points[0];
     }
     void Update()
@@ -16,16 +25,15 @@ public class Enemy : MonoBehaviour
         if (target!=null)
         {
             Vector3 dir = target.position - transform.position;
-            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+            transform.Translate(dir.normalized * startSpeed * Time.deltaTime, Space.World);
             if (Vector3.Distance(transform.position, target.position) <= 0.2)
             {
                 
                 GetNextWayPoint();
                 transform.Rotate(dir);
             }
-
-        }
-       
+            
+        } 
     }
     void GetNextWayPoint()
     {
@@ -40,5 +48,16 @@ public class Enemy : MonoBehaviour
             target = Waypoint.points[wavepointIndex];
         }
         
+    }
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        
+        if (health<=0)
+        {
+            Destroy(gameObject);
+        }
+        healthBar.fillAmount = health / startHealth;
+
     }
 }

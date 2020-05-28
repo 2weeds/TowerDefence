@@ -1,22 +1,31 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
+using Unity;
 
 public class Shop : MonoBehaviour
 {
+    
     BuildManager buildManager;
+    public TurretBlueprint emptyTurret;
+    public TurretBlueprint machineTurret;
+    public TurretBlueprint missleLauncher;
     void Start()
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseMachineTurret ()
+    
+    public void SelectMachineTurret ()
     {
         Debug.Log("Machine Turret Purchased");
-        buildManager.SetTurretToBuild(buildManager.machineTurretPrefab);
+        buildManager.SelectTurretToBuild(machineTurret);
     }
-    public void PurchaseMissileTurret()
+    public void SelectMissileTurret()
     {
         Debug.Log("Missile Turret Purchased");
-        buildManager.SetTurretToBuild(buildManager.missileTurretPrefab);
+        buildManager.SelectTurretToBuild(missleLauncher);
+    }
+    public void SelectEmptyTurret()
+    {
+        buildManager.SelectTurretToBuild(emptyTurret);
     }
 
 }

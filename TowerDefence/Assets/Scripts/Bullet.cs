@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using Unity;
 public class Bullet : MonoBehaviour
 {
 
@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
 
 	public float speed = 70f;
 
-	public int damage = 50;
+	public float damage = 30;
 
 	public float explosionRadius = 0f;
 	public GameObject impactEffect;
@@ -45,19 +45,22 @@ public class Bullet : MonoBehaviour
 	{
 
 		GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-		Destroy(effectIns, 5f);
+		Destroy(effectIns, 2f);
+		Damage(target);
+		if (explosionRadius > 0f)
+		{
+			Explode();
+			
 
-		//if (explosionRadius > 0f)
-		//{
-		//	Explode();
-		//}
-		//else
-		//{
-		//	Damage(target);
-		//}
-		//Destroy(target.gameObject);
+		}
+		else
+		{
+		}
+		
 		Destroy(gameObject);
+
 	}
+	
 
 	void Explode()
 	{
@@ -66,20 +69,19 @@ public class Bullet : MonoBehaviour
 		{
 			if (collider.tag == "Enemy")
 			{
-				//Damage(collider.transform);
+				Damage(collider.transform);
 			}
 		}
 	}
+	void Damage(Transform enemy)
+	{
+		Enemy e = enemy.GetComponent<Enemy>();
 
-	//void Damage(Transform enemy)
-	//{
-	//	Enemy e = enemy.GetComponent<Enemy>();
-
-	//	if (e != null)
-	//	{
-	//		e.TakeDamage(damage);
-	//	}
-	//}
+		if (e != null)
+		{
+			e.TakeDamage(damage);
+		}
+	}
 
 	void OnDrawGizmosSelected()
 	{
