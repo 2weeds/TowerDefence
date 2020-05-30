@@ -9,6 +9,6 @@ public class WavesUI : MonoBehaviour
     public Text waveText;
     void Update()
     {
-        waveText.text = "Wave: "+WaveSpawner.waveIndex.ToString();
+        waveText.text = "Wave: " + WaveSpawner.waveIndex.ToString();
     }
 }

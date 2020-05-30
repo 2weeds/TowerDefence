@@ -58,10 +58,6 @@ public class Node : MonoBehaviour
         {
             rend.material.color = hoverTrueColor;
         }
-        
-        
-        
-
     }
     void OnMouseExit()
     {

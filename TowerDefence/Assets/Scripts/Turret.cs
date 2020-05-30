@@ -6,10 +6,10 @@ public class Turret : MonoBehaviour
 
 	private Transform target;
 	private Enemy targetEnemy;
-	
+
 
 	[Header("General")]
-
+	public int cost = 300;
 	public float range = 15f;
 
 	[Header("Use Bullets (default)")]

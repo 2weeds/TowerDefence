@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 7
+  worth: 100
   startHealth: 200
-  worth: 50
   healthBar: {fileID: 2468148722701258543}
 --- !u!1 &2226300663749260975
 GameObject:
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 10
-  startHealth: 100
   worth: 50
+  startHealth: 100
   healthBar: {fileID: 0}
 --- !u!1001 &3749306300840173554
 PrefabInstance:

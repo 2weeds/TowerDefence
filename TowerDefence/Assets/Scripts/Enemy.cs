@@ -6,13 +6,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10f;
+    public int worth = 50;
     [HideInInspector]
     private Transform target;
     private int wavepointIndex = 0;
-    
     public float startHealth = 100;
     private float health;
-    public int worth = 50;
+    
     [Header("Unity Stuff")]
     public Image healthBar;
     void Start()
@@ -53,11 +53,16 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
         
-        if (health<=0)
+        if (health<=0&&gameObject!=null)
         {
+            PlayerStats.Money += addGold();
             Destroy(gameObject);
         }
         healthBar.fillAmount = health / startHealth;
 
+    }
+    public int addGold()
+    {
+        return worth;
     }
 }
