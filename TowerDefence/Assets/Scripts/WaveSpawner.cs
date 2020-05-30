@@ -14,16 +14,22 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
     public string enemyTag;
     public float timeBetweenWaves = 5f;
+    private bool canSpawn = false;
     private float countdown = 2f;
     public static int waveIndex = 0;
+    public GameObject PlayButton;
+    public GameObject SpeedUpButton;
+    public GameObject SpeedUpUpButton;
     void Update ()
     {
-        if (!IfEnemyAlive())
+        
+        if (!IfEnemyAlive() && canSpawn)
         {
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
         }
         countdown -= Time.deltaTime;
+        restoreButtons();
     }
     IEnumerator SpawnWave ()
     {
@@ -69,10 +75,23 @@ public class WaveSpawner : MonoBehaviour
             if (enemy != null)
             {
                 tmp = true;
+                canSpawn = false;
                 break;
             }
         }
         return tmp;
     }
-
+    public void canSpawnTrue()
+    {
+        canSpawn = true;
+    }
+    void restoreButtons()
+    {
+        if (!IfEnemyAlive())
+        {
+            PlayButton.SetActive(true);
+            SpeedUpButton.SetActive(false);
+            SpeedUpUpButton.SetActive(false);
+        }
+    }
 }

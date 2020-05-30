@@ -17,8 +17,8 @@ public class BuildManager : MonoBehaviour
     }
     public GameObject machineTurretPrefab;
 
-    public GameObject missileTurretPrefab;
-    public GameObject standartTurretPrefab;
+    public GameObject missileLauncherPrefab;
+    public GameObject missleTurretPrefab;
 
 
 
@@ -29,12 +29,9 @@ public class BuildManager : MonoBehaviour
     {
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
-        turret = null;
     }
     public void SelectTurretToBuild(TurretBlueprint turret)
     {
         turretToBuild = turret;
-
-
     }
 }
