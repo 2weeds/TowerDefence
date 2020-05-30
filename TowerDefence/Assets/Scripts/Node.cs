@@ -3,17 +3,15 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
-    public GameObject startTurret;
     public Color hoverTrueColor;
     public Color hoverFalseColor;
-    private Renderer rend;
     private Color startColor;
+    private Renderer rend;
     public GameObject turret;
     public Vector3 positionOffSet;
     BuildManager buildManager;
     void Start ()
     {
-        startTurret = null;
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
@@ -37,10 +35,9 @@ public class Node : MonoBehaviour
         {
             Debug.Log("Can't build there! - TODO: Display on screen.");
             return;
-
         }
         buildManager.BuildTurretOn(this);
-        rend.material.color = hoverFalseColor;
+        rend.material.color = startColor;
     }
     void OnMouseEnter()
     {
@@ -52,22 +49,22 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        if (turret==null)
-        {
-            rend.material.color = hoverTrueColor;
-        }
-        if (turret!=null)
+
+        if (turret != null)
         {
             rend.material.color = hoverFalseColor;
         }
+        if (turret == null)
+        {
+            rend.material.color = hoverTrueColor;
+        }
+        
+        
+        
 
     }
     void OnMouseExit()
     {
         rend.material.color = startColor;
-    }
-    public void afterPurchase()
-    {
-        turret = startTurret;
     }
 }
