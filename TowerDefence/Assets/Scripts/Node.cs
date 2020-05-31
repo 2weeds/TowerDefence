@@ -27,13 +27,18 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        if (!buildManager.CanBuild)
-        {
-            return;
-        }
+        //if (!buildManager.CanBuild)
+        //{
+        //    return;
+        //}
         if (turret != null)
         {
-            Debug.Log("Can't build there! - TODO: Display on screen.");
+            buildManager.SelectNode(this);
+            //Debug.Log("Can't build there! - TODO: Display on screen.");
+            return;
+        }
+        if (!buildManager.CanBuild)
+        {
             return;
         }
         buildManager.BuildTurretOn(this);
