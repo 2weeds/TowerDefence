@@ -20,20 +20,14 @@ public class BuildManager : MonoBehaviour
     public GameObject missileLauncherPrefab;
     public GameObject missleTurretPrefab;
 
-
-
     public TurretBlueprint turretToBuild;
+
+
     private Node selectedNode;
 
     public NodeUI nodeUI;
     public bool CanBuild { get { return turretToBuild != null; } }
-    public void BuildTurretOn(Node node)
-    {
-        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
-        node.turret = turret;
-        PlayerStats.Money -= turretToBuild.cost;
-        SelectTurretToBuild(null);
-    }
+    
 
     public void SelectNode (Node node)
     {
@@ -60,4 +54,9 @@ public class BuildManager : MonoBehaviour
         turretToBuild = turret;
         DeselectNode();
     }
+    public TurretBlueprint GetTurretToBuild()
+    {
+        return turretToBuild;
+    }
+
 }

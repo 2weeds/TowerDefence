@@ -7,9 +7,17 @@ public class Node : MonoBehaviour
     public Color hoverFalseColor;
     private Color startColor;
     private Renderer rend;
+    [HideInInspector]
     public GameObject turret;
+    [HideInInspector]
+    public TurretBlueprint turretBlueprint;
+    [HideInInspector]
+    public bool isUpgraded = false;
     public Vector3 positionOffSet;
     BuildManager buildManager;
+
+    public TurretBlueprint turretToBuild;
+
     void Start ()
     {
         rend = GetComponent<Renderer>();
@@ -41,8 +49,47 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        buildManager.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBuild());
         rend.material.color = startColor;
+    }
+
+    void BuildTurret (TurretBlueprint blueprint)
+    {
+        if(PlayerStats.Money < blueprint.cost)
+        {
+            Debug.Log("Not enough money to build that!");
+            return;
+        }
+        PlayerStats.Money -= blueprint.cost;
+
+        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        turretBlueprint = blueprint;
+
+        
+        
+        //SelectTurretToBuild(null);
+    }
+    public void UpgradeTurret ()
+    {
+        if (PlayerStats.Money < turretBlueprint.upgradeCost)
+        {
+            Debug.Log("Not enough money to upgrade that!");
+            return;
+        }
+        PlayerStats.Money -= turretBlueprint.upgradeCost;
+        //panaikina sena
+        Destroy(turret);
+
+        //darom nauja
+
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        
+
+        isUpgraded = true;
     }
     void OnMouseEnter()
     {
@@ -68,4 +115,5 @@ public class Node : MonoBehaviour
     {
         rend.material.color = startColor;
     }
+
 }
