@@ -2029,7 +2029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   machineTurretPrefab: {fileID: 2432766653641093388, guid: 8a77cfea7a5146e4fa472f1341f340a0,
     type: 3}
-  missileLauncherPrefab: {fileID: 164248220326858011, guid: 621a7f70853962c49b4cd54932dc86c9,
+  missileLauncherPrefab: {fileID: 2779172221896062497, guid: 2c37b56e774ac8441abd985ac8180b8a,
     type: 3}
   missleTurretPrefab: {fileID: 3529664218755126346, guid: 3b081a8d11955d94fa419dbb7d1f6332,
     type: 3}
@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 743490666}
   - component: {fileID: 743490665}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Sell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2438,7 +2438,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 743490666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1405171943}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &743490666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4540,8 +4551,9 @@ MonoBehaviour:
     prefab: {fileID: 3529664218755126346, guid: 3b081a8d11955d94fa419dbb7d1f6332,
       type: 3}
     cost: 300
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 7323411036619247892, guid: 1fdb992085efd114992e8f30a55f6207,
+      type: 3}
+    upgradeCost: 60
   machineTurret:
     prefab: {fileID: 2432766653641093388, guid: 8a77cfea7a5146e4fa472f1341f340a0,
       type: 3}
@@ -4550,10 +4562,12 @@ MonoBehaviour:
       type: 3}
     upgradeCost: 60
   missleLauncher:
-    prefab: {fileID: 164248220326858011, guid: 621a7f70853962c49b4cd54932dc86c9, type: 3}
+    prefab: {fileID: 2779172221896062497, guid: 2c37b56e774ac8441abd985ac8180b8a,
+      type: 3}
     cost: 500
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 164248220326858011, guid: b2b3458485cf29d49b264134430c4c0d,
+      type: 3}
+    upgradeCost: 60
 --- !u!1001 &1640344534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4697,7 +4711,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '$50
+  m_Text: '$200
 
 '
 --- !u!222 &1720590265
