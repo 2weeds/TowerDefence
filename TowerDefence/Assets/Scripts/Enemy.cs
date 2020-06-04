@@ -7,11 +7,14 @@ public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10f;
     public int worth = 50;
+    public double scoreWorth = 20;
+    public static double scoreMultiprier = 1.1;
     [HideInInspector]
     private Transform target;
     private int wavepointIndex = 0;
     public float startHealth = 100;
     private float health;
+    
     
     [Header("Unity Stuff")]
     public Image healthBar;
@@ -55,8 +58,11 @@ public class Enemy : MonoBehaviour
         
         if (health<=0&&gameObject!=null)
         {
+            
             PlayerStats.Money += addGold();
+            PlayerStats.Score += addScore()*scoreMultiprier;
             Destroy(gameObject);
+            
         }
         healthBar.fillAmount = health / startHealth;
 
@@ -64,5 +70,9 @@ public class Enemy : MonoBehaviour
     public int addGold()
     {
         return worth;
+    }
+    public double addScore()
+    {
+        return scoreWorth;
     }
 }

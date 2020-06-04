@@ -74,45 +74,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12032}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12062}
-    - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12128}
     - Class: 114
       Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 12356}
+      Script: {instanceID: 12316}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12422}
     - Class: 114
-      Script: {instanceID: 12600}
+      Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12658}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 12724}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12782}
     - Class: 114
-      Script: {instanceID: 13080}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13146}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 14046}
+      Script: {instanceID: 13718}
+    - Class: 114
+      Script: {instanceID: 14112}
+    - Class: 114
+      Script: {instanceID: 162510}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,33 +165,37 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 12240}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 13142}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13208}
     - Class: 114
-      Script: {instanceID: 13750}
+      Script: {instanceID: 13480}
     - Class: 114
-      Script: {instanceID: 13908}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 14046}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 14092}
+      Script: {instanceID: 13974}
+    - Class: 114
+      Script: {instanceID: 14112}
+    - Class: 114
+      Script: {instanceID: 14158}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -329,7 +335,7 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: e82893f8ea9d37aa2d167f1adbbb5296
+      Hash: 4aa8071dd7330342d2073734325ea85c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerStats
@@ -365,7 +371,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 901731ae68cfd53cd03ef22b7b22d181
+      Hash: 43dfd1becbe2c13683c0c8039bd9cbf8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shop
@@ -461,7 +467,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 46310c10af0b8802a78f0630e9914c2a
+      Hash: 3bd9812fec16cb730329a53cc82a6553
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuildManager
@@ -569,7 +575,7 @@ ScriptsOnlyBuild:
     className: WavesUI
   - hash:
       serializedVersion: 2
-      Hash: 74bfb2b68d7b470cb81cdf9b204f9e85
+      Hash: 84b21bd99da8e962885596c265953d09
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -947,7 +953,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: cd58ebdd1874929b2aeed3acce37bb75
+      Hash: d2608403a455315261bf546bd2a003cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Node
@@ -1135,4 +1141,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/dauma/OneDrive/Documents/GitHub/TowerDefence/TowerDefence/Test/TowerDefence.exe
+  playerPath: C:/Users/dovyd/Desktop/New folder/TowerDefence/TowerDefence/Test/TowerDefence.exe

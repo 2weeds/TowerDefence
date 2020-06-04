@@ -69,7 +69,7 @@ public class Node : MonoBehaviour
 
         
         
-        //SelectTurretToBuild(null);
+        buildManager.SelectTurretToBuild(null);
     }
     public void UpgradeTurret ()
     {

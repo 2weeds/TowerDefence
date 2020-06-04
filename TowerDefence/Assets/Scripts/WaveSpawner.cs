@@ -39,6 +39,7 @@ public class WaveSpawner : MonoBehaviour
             SpawnEnemy();
             yield return new WaitForSeconds(1f);
         }
+        Enemy.scoreMultiprier = Enemy.scoreMultiprier+0.1;
         
     }
     void SpawnEnemy ()
