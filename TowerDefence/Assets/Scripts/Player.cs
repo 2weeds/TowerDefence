@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
         score = PlayerStats.Score;
-        if (score>data.highScore)
+        if (score > data.highScore)
         {
             SaveSystem.SaveScore(this);
             data = SaveSystem.LoadPlayer();

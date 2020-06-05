@@ -10,10 +10,7 @@ public static class SaveSystem
         
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.fun";
-        if (File.Exists(path))
-        {
-            File.Delete(path);
-        }
+        
         FileStream stream = new FileStream(path, FileMode.Create);
         PlayerData data = new PlayerData(player);
         formatter.Serialize(stream, data);

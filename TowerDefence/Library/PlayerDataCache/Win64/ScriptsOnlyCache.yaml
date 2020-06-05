@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - MainMenu
     - Node
     - NodeUI
+    - PauseMenu
+    - Player
     - PlayerStats
     - Shop
     - SpeedUp
@@ -35,6 +37,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
@@ -74,47 +77,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11382}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11698}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11712}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 12098}
+      Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12250}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 12422}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12434}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12370}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12382}
     - Class: 114
-      Script: {instanceID: 12782}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 13146}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 13718}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 14112}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 162510}
+      Script: {instanceID: 13668}
+    - Class: 114
+      Script: {instanceID: 14062}
+    - Class: 114
+      Script: {instanceID: 113650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -165,37 +172,35 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11382}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11502}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11698}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11712}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12250}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 13140}
     - Class: 114
-      Script: {instanceID: 13190}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 13208}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13480}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 13766}
     - Class: 114
-      Script: {instanceID: 13816}
+      Script: {instanceID: 13924}
     - Class: 114
-      Script: {instanceID: 13974}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14112}
-    - Class: 114
-      Script: {instanceID: 14158}
+      Script: {instanceID: 14108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -335,7 +340,7 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 4aa8071dd7330342d2073734325ea85c
+      Hash: ae095b6825eb71eb36dff044899458b0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerStats
@@ -447,6 +452,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 8f9546a8bdb6ac5aafd51731e91696e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: 4e9333594897a1fb8b136ad2eae996c7
@@ -1137,8 +1148,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/dovyd/Desktop/New folder/TowerDefence/TowerDefence/Test/TowerDefence.exe
+  playerPath: C:/Users/dauma/OneDrive/Documents/GitHub/TowerDefence/TowerDefence/naujas/TowerDefence.exe
