@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - PauseMenu
     - Player
     - PlayerStats
+    - SettingsMenu
     - Shop
     - SpeedUp
     - Turret
@@ -66,6 +67,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -77,51 +82,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11584}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 11656}
+      Script: {instanceID: 11646}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 11782}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 11954}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 12096}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 12382}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12722}
     - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 13086}
     - Class: 114
-      Script: {instanceID: 13520}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 113650}
+      Script: {instanceID: 14056}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -165,6 +170,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -172,35 +181,37 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 11656}
+      Script: {instanceID: 11646}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 13132}
     - Class: 114
-      Script: {instanceID: 13158}
+      Script: {instanceID: 13150}
     - Class: 114
-      Script: {instanceID: 13430}
+      Script: {instanceID: 13380}
     - Class: 114
-      Script: {instanceID: 13520}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13766}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13760}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 13918}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14056}
+    - Class: 114
+      Script: {instanceID: 14102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -216,6 +227,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -790,6 +807,12 @@ ScriptsOnlyBuild:
     className: Bullet
   - hash:
       serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -896,6 +919,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WFX_LightFlicker
+  - hash:
+      serializedVersion: 2
+      Hash: d835e37be8caf473a0d64dc941f2a2a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -1150,10 +1179,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PauseMenu
+    className: VolumeValueChange
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
