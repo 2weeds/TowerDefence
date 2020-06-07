@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - CFX_AutoDestructShuriken
     - CameraController
     - Enemy
+    - MainMenu
     - Node
     - NodeUI
     - PauseMenu
@@ -179,6 +180,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11316}
+    - Class: 114
+      Script: {instanceID: 11492}
     - Class: 114
       Script: {instanceID: 11632}
     - Class: 114

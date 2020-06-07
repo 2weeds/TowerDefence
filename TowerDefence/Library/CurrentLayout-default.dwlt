@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
-  controlID: 27986
+  controlID: 25566
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1419
     height: 947
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 27991
+  controlID: 25567
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 27992
+  controlID: 25568
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,18 +343,18 @@ MonoBehaviour:
       y: 21
       width: 1920
       height: 907
-    m_Scale: {x: 1.0887984, y: 1.0887984}
-    m_Translation: {x: 960, y: 464.55072}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 960, y: 453.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -881.70593
-      y: -426.66367
-      width: 1763.4119
-      height: 833.0284
+      x: -960
+      y: -453.5
+      width: 1920
+      height: 907
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1920, y: 928}
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8e020300
-      m_LastClickedID: 197262
-      m_ExpandedIDs: 24e3feff26e9feff42e9feff4ce9feff56e9feff2aecfeff46ecfeff74edfeff84edfeff08c6ffff24c6ffff56c7ffff64c7ffff0ccbffff28cbffff56ccffff60ccffff64d6ffff80d6ffffaed7ffffb8d7ffff82e6ffff9ee6ffffcce7ffffd6e7ffff6efbffff98500000d4500000bc9f0000c29f0000dc9f0000aafc0000f8fc00001afd00004a7e0100628201007c8201004c840100828801009ab40200d6b4020008b5020052020300c0020300
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3447feff5247feff7c48feff9248fefff878feff0879feffbaa6feffbea6feffc4a6feff46c5feff54c5feff88c5feff8cc5feff92c5feffaeccfeff1ed2feff5273ffff6673ffff6c73ffffe2baffff56c2ffff56e1ffff72e1ffff9ee2ffffa8e2ffffeee7ffff0ae8ffff36e9ffff40e9ffff6efbffff70fbffff12510000745100008051000036ca000020cc000090cf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -454,9 +454,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 767.92847, y: 349.1933, z: 212.75696}
+    m_Target: {x: 1.2799587, y: -191.42473, z: 255.79126}
     speed: 2
-    m_Value: {x: 767.92847, y: 349.1933, z: 212.75696}
+    m_Value: {x: -0.30212402, y: 0.7751465, z: -2.3320312}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -502,13 +502,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.068855494, y: -0.106939696, z: 0.007423531, w: -0.9918558}
+    m_Target: {x: -0.37874633, y: 0.03940621, z: -0.016142922, w: -0.924528}
     speed: 2
-    m_Value: {x: -0.070342846, y: -0.10692789, z: 0.0075838966, w: -0.99174637}
+    m_Value: {x: 0.0045434153, y: 0.9919301, z: -0.12111635, w: 0.03721496}
   m_Size:
-    m_Target: 928.21234
+    m_Target: 291.07758
     speed: 2
-    m_Value: 888.24146
+    m_Value: 3.5547616
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -598,20 +598,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Turrets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Turrets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\TowerDefence\TowerDefence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1141}
-    m_SelectedIDs: aa540000
-    m_LastClickedID: 21674
-    m_ExpandedIDs: 000000007e52000080520000825200008452000086520000885200008a5200008c5200008e52000090520000925200009452000096520000985200009a5200009c5200009e520000a0520000a2520000a4520000a6520000145400002054000000ca9a3b
+    scrollPos: {x: 0, y: 1093}
+    m_SelectedIDs: 54550000
+    m_LastClickedID: 21844
+    m_ExpandedIDs: 0000000030530000325300003453000036530000385300003a5300003c5300003e53000040530000425300004453000046530000485300004a5300004c5300004e53000050530000525300005453000056530000585300005a5300005c53000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +639,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e52000080520000825200008452000086520000885200008a5200008c5200008e52000090520000925200009452000096520000985200009a5200009c5200009e520000a0520000a2520000a4520000a6520000145400002054000000ca9a3b
+    m_ExpandedIDs: 0000000030530000325300003453000036530000385300003a5300003c5300003e53000040530000425300004453000046530000485300004a5300004c5300004e53000050530000525300005453000056530000585300005a5300005c53000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000883f0000284f000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
