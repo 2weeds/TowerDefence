@@ -8,6 +8,7 @@ public class Shop : MonoBehaviour
     public TurretBlueprint missileTurret;
     public TurretBlueprint machineTurret;
     public TurretBlueprint missleLauncher;
+    public TurretBlueprint minigunTurret;
     void Start()
     {
         buildManager = BuildManager.instance;
@@ -27,5 +28,8 @@ public class Shop : MonoBehaviour
     {
         buildManager.SelectTurretToBuild(missileTurret);
     }
-
+    public void SelectMinigunTurret() 
+    {
+        buildManager.SelectTurretToBuild(minigunTurret);
+    }
 }

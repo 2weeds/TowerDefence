@@ -38,5 +38,10 @@ public class NodeUI : MonoBehaviour
         target.SellTurret();
         BuildManager.instance.DeselectNode();
     }
- 
+
+    public void TokenUpgrade() 
+    {
+        target.TokenTurretUpgrade();
+        BuildManager.instance.DeselectNode();
+    }  
 }

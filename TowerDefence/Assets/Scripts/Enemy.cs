@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public float startSpeed = 10f;
     public int worth = 50;
     public double scoreWorth = 20;
+    public int tokenWorth = 1;
     public static double scoreMultiprier = 1.1;
     [HideInInspector]
     private Transform target;
@@ -61,6 +62,9 @@ public class Enemy : MonoBehaviour
             
             PlayerStats.Money += addGold();
             PlayerStats.Score += addScore()*scoreMultiprier;
+            if (RandomBool(0.1f) == true)
+                PlayerStats.Token += addToken();
+
             Destroy(gameObject);
             
         }
@@ -74,5 +78,19 @@ public class Enemy : MonoBehaviour
     public double addScore()
     {
         return scoreWorth;
+    }
+    public int addToken() 
+    {
+        return tokenWorth;
+    }
+
+    public static bool RandomBool(float chanceTrue) 
+    {
+        return Random.Range(0f, 1f) <= chanceTrue;
+    }
+
+    public static bool RandomBool() 
+    {
+        return RandomBool(0.5f);
     }
 }

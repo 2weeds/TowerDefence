@@ -91,6 +91,22 @@ public class Node : MonoBehaviour
 
         isUpgraded = true;
     }
+
+    public void TokenTurretUpgrade() 
+    {
+        if (PlayerStats.Token < turretBlueprint.tokenUpgradeCost)
+        {
+            Debug.Log("Not enough tokens to upgrade that!");
+            return;
+        }
+        PlayerStats.Token -= turretBlueprint.tokenUpgradeCost;
+        Destroy(turret);
+
+        //darom nauja
+
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.TokenUpgradePrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+    }
     public void SellTurret()
     {
         PlayerStats.Money += turretBlueprint.GetSellAmont();

@@ -11,7 +11,10 @@ public class TurretBlueprint {
 
     public GameObject upgradedPrefab;
 
+    public GameObject TokenUpgradePrefab;
+
     public int upgradeCost;
+    public int tokenUpgradeCost;
 
     public int GetSellAmont()
     {
